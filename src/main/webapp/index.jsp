@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>JSP - Hello World</title>
+  <title>Long Vu Pharmacy</title>
 </head>
 <body>
-<h1><%= "Hello World!" %></h1>
+<h1><%= "Long Vu Pharmacy" %></h1>
 <br/>
-<a href="hello-servlet">Hello Servlet</a>
+<a href="medicines">Danh sách thuốc</a>
 </body>
 </html>

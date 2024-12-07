@@ -1,3 +1,4 @@
+package org.example.democ0624;
 public class Medicine {
     private int id;
     private String name;

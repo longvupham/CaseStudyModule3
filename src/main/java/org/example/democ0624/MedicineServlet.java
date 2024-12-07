@@ -6,8 +6,7 @@ import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
-
-@WebServlet(name = "MedicineServlet", urlPatterns = "/medicines")
+@WebServlet(name = "MedicineServlet", value = "/medicines")
 public class MedicineServlet extends HttpServlet {
     private MedicineModel medicineModel;
 
@@ -17,7 +16,7 @@ public class MedicineServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
 
         List<Medicine> medicines = medicineModel.getAllMedicines();
